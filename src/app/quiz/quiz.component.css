@@ -1,0 +1,8 @@
+.quiz-wrapper{
+  border: 2px solid green
+}
+.quiz-progress .bar{
+  background: #ffcc00;
+  height: 5px;
+  transition: .5s ease all;
+}
