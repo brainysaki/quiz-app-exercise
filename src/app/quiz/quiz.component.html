@@ -1,0 +1,140 @@
+<div class="container">
+	<div class="row pt-4">
+
+		<div class="col-md-12">
+
+			<div class="quiz-wrapper">
+				<div class="quiz-progress">
+					<div class="bar" [ngStyle]="{'width':barWidth+'%' }" >
+					</div>
+				</div>
+				<div class="quiz-header text-center">
+					Question {{step}} of 5
+				</div>
+				<div class="quiz-body px-3 py-3">
+					<div class="item" *ngIf="step==1" > 
+						<div class="ques mb-2">
+							Which is the largest country in the world by population?
+						</div>
+						<div class="ans">
+							<div class="custom-control custom-radio">
+								<input type="radio" id="cr1-1" name="customRadio" class="custom-control-input">
+								<label class="custom-control-label" for="cr1-1">India</label>
+							</div>
+							<div class="custom-control custom-radio">
+								<input type="radio" id="cr1-2" name="customRadio" class="custom-control-input">
+								<label class="custom-control-label" for="cr1-2">USA</label>
+							</div>
+							<div class="custom-control custom-radio">
+								<input type="radio" id="cr1-3" name="customRadio" class="custom-control-input">
+								<label class="custom-control-label" for="cr1-3">China</label>
+							</div>
+							<div class="custom-control custom-radio">
+								<input type="radio" id="cr1-4" name="customRadio" class="custom-control-input">
+								<label class="custom-control-label" for="cr1-4">Russia</label>
+							</div>
+						</div>
+					</div>
+          <div class="item" *ngIf="step==2">
+						<div class="ques mb-2">
+							When did the second world war end?
+						</div>
+						<div class="ans">
+							<div class="custom-control custom-radio">
+								<input type="radio" id="cr2-1" name="customRadio" class="custom-control-input">
+								<label class="custom-control-label" for="cr2-1">1945</label>
+							</div>
+							<div class="custom-control custom-radio">
+								<input type="radio" id="cr2-2" name="customRadio" class="custom-control-input">
+								<label class="custom-control-label" for="cr2-2">1939</label>
+							</div>
+							<div class="custom-control custom-radio">
+								<input type="radio" id="cr2-3" name="customRadio" class="custom-control-input">
+								<label class="custom-control-label" for="cr2-3">1944</label>
+							</div>
+							<div class="custom-control custom-radio">
+								<input type="radio" id="cr2-4" name="customRadio" class="custom-control-input">
+								<label class="custom-control-label" for="cr2-4">1942</label>
+							</div>
+						</div>
+					</div>
+          <div class="item" *ngIf="step==3">
+						<div class="ques mb-2">
+							Which was the first country to issue paper currency?
+						</div>
+						<div class="ans">
+							<div class="custom-control custom-radio">
+								<input type="radio" id="cr3-1" name="customRadio" class="custom-control-input">
+								<label class="custom-control-label" for="cr3-1">USA</label>
+							</div>
+							<div class="custom-control custom-radio">
+								<input type="radio" id="cr3-2" name="customRadio" class="custom-control-input">
+								<label class="custom-control-label" for="cr3-2">France</label>
+							</div>
+							<div class="custom-control custom-radio">
+								<input type="radio" id="cr3-3" name="customRadio" class="custom-control-input">
+								<label class="custom-control-label" for="cr3-3">Italy</label>
+							</div>
+							<div class="custom-control custom-radio">
+								<input type="radio" id="cr3-4" name="customRadio" class="custom-control-input">
+								<label class="custom-control-label" for="cr3-4">China</label>
+							</div>
+						</div>
+					</div>
+          <div class="item" *ngIf="step==4">
+						<div class="ques mb-2">
+							Which city hosted the 1996 Summer Olympics?
+						</div>
+						<div class="ans">
+							<div class="custom-control custom-radio">
+								<input type="radio" id="cr4-1" name="customRadio" class="custom-control-input">
+								<label class="custom-control-label" for="cr4-1">Atlanta</label>
+							</div>
+							<div class="custom-control custom-radio">
+								<input type="radio" id="cr4-2" name="customRadio" class="custom-control-input">
+								<label class="custom-control-label" for="cr4-2">Sydney</label>
+							</div>
+							<div class="custom-control custom-radio">
+								<input type="radio" id="cr4-3" name="customRadio" class="custom-control-input">
+								<label class="custom-control-label" for="cr4-3">Athens</label>
+							</div>
+							<div class="custom-control custom-radio">
+								<input type="radio" id="cr4-4" name="customRadio" class="custom-control-input">
+								<label class="custom-control-label" for="cr4-4">Beijing</label>
+							</div>
+						</div>
+					</div>
+          <div class="item" *ngIf="step==5">
+						<div class="ques mb-2">
+							Who invented telephone?
+						</div>
+						<div class="ans">
+							<div class="custom-control custom-radio">
+								<input type="radio" id="cr5-1" name="customRadio" class="custom-control-input">
+								<label class="custom-control-label" for="cr5-1">Albert Einstein</label>
+							</div>
+							<div class="custom-control custom-radio">
+								<input type="radio" id="cr5-2" name="customRadio" class="custom-control-input">
+								<label class="custom-control-label" for="cr5-2">Alexander Graham Bell</label>
+							</div>
+							<div class="custom-control custom-radio">
+								<input type="radio" id="cr5-3" name="customRadio" class="custom-control-input">
+								<label class="custom-control-label" for="cr5-3">Isaac Newton</label>
+							</div>
+							<div class="custom-control custom-radio">
+								<input type="radio" id="cr-4" name="customRadio" class="custom-control-input">
+								<label class="custom-control-label" for="cr5-4">Marie Curie</label>
+							</div>
+						</div>
+					</div>
+
+				</div>
+        <div class="quiz-footer text-center pb-3" >
+          <button class="btn btn-warning" (click)="onBack()" [disabled]="step==1" > Back</button>&nbsp;
+          <button class="btn btn-success" (click)="onNext()" [disabled]="step==5" >Next</button>
+        </div>
+			</div>
+		</div>
+	</div>
+
+</div>
