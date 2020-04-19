@@ -16,19 +16,29 @@
 						</div>
 						<div class="ans">
 							<div class="custom-control custom-radio">
-								<input type="radio" id="cr1-1" name="customRadio" class="custom-control-input">
-								<label class="custom-control-label" for="cr1-1">India</label>
+								<input type="radio" id="cr1-1" name="customRadio" class="custom-control-input" (click)="calScore(cr11)"
+                #cr11
+                [ngModel]="cr11" >
+								<label class="custom-control-label" for="cr1-2">India</label>
 							</div>
 							<div class="custom-control custom-radio">
-								<input type="radio" id="cr1-2" name="customRadio" class="custom-control-input">
+								<input type="radio" id="cr1-2" name="customRadio" class="custom-control-input"
+                #cr12 [ngModel]="cr12" 
+                (click)="calScore(cr12)" >
 								<label class="custom-control-label" for="cr1-2">USA</label>
 							</div>
 							<div class="custom-control custom-radio">
-								<input type="radio" id="cr1-3" name="customRadio" class="custom-control-input">
+								<input type="radio" id="cr1-3" name="customRadio" class="custom-control-input"
+                #cr13 [ngModel]="cr13" 
+                (click)="calScore(cr13)"
+                >
 								<label class="custom-control-label" for="cr1-3">China</label>
 							</div>
 							<div class="custom-control custom-radio">
-								<input type="radio" id="cr1-4" name="customRadio" class="custom-control-input">
+								<input type="radio" id="cr1-4" name="customRadio" class="custom-control-input"
+                #cr14 [ngModel]="cr14" 
+                (click)="calScore(cr14)"
+                >
 								<label class="custom-control-label" for="cr1-4">Russia</label>
 							</div>
 						</div>
@@ -39,19 +49,35 @@
 						</div>
 						<div class="ans">
 							<div class="custom-control custom-radio">
-								<input type="radio" id="cr2-1" name="customRadio" class="custom-control-input">
+								<input type="radio" id="cr2-1" name="customRadio" class="custom-control-input"
+                class="custom-control-input"
+                #cr21 [ngModel]="cr21" 
+                (click)="calScore(cr21)"
+                >
 								<label class="custom-control-label" for="cr2-1">1945</label>
 							</div>
 							<div class="custom-control custom-radio">
-								<input type="radio" id="cr2-2" name="customRadio" class="custom-control-input">
+								<input type="radio" id="cr2-2" name="customRadio" class="custom-control-input"
+                class="custom-control-input"
+                #cr22 [ngModel]="cr22" 
+                (click)="calScore(cr22)"
+                >
 								<label class="custom-control-label" for="cr2-2">1939</label>
 							</div>
 							<div class="custom-control custom-radio">
-								<input type="radio" id="cr2-3" name="customRadio" class="custom-control-input">
+								<input type="radio" id="cr2-3" name="customRadio" class="custom-control-input"
+                class="custom-control-input"
+                #cr23 [ngModel]="cr23" 
+                (click)="calScore(cr23)"
+                >
 								<label class="custom-control-label" for="cr2-3">1944</label>
 							</div>
 							<div class="custom-control custom-radio">
-								<input type="radio" id="cr2-4" name="customRadio" class="custom-control-input">
+								<input type="radio" id="cr2-4" name="customRadio" class="custom-control-input"
+                class="custom-control-input"
+                #cr24 [ngModel]="cr24" 
+                (click)="calScore(cr24)"
+                >
 								<label class="custom-control-label" for="cr2-4">1942</label>
 							</div>
 						</div>
@@ -62,19 +88,35 @@
 						</div>
 						<div class="ans">
 							<div class="custom-control custom-radio">
-								<input type="radio" id="cr3-1" name="customRadio" class="custom-control-input">
+								<input type="radio" id="cr3-1" name="customRadio" class="custom-control-input"
+                class="custom-control-input"
+                #cr31 [ngModel]="cr31" 
+                (click)="calScore(cr31)"
+                >
 								<label class="custom-control-label" for="cr3-1">USA</label>
 							</div>
 							<div class="custom-control custom-radio">
-								<input type="radio" id="cr3-2" name="customRadio" class="custom-control-input">
+								<input type="radio" id="cr3-2" name="customRadio" class="custom-control-input"
+                class="custom-control-input"
+                #cr32 [ngModel]="cr32" 
+                (click)="calScore(cr32)"
+                >
 								<label class="custom-control-label" for="cr3-2">France</label>
 							</div>
 							<div class="custom-control custom-radio">
-								<input type="radio" id="cr3-3" name="customRadio" class="custom-control-input">
+								<input type="radio" id="cr3-3" name="customRadio" class="custom-control-input"
+                class="custom-control-input"
+                #cr33 [ngModel]="cr33" 
+                (click)="calScore(cr33)"
+                >
 								<label class="custom-control-label" for="cr3-3">Italy</label>
 							</div>
 							<div class="custom-control custom-radio">
-								<input type="radio" id="cr3-4" name="customRadio" class="custom-control-input">
+								<input type="radio" id="cr3-4" name="customRadio" class="custom-control-input"
+                class="custom-control-input"
+                #cr14 [ngModel]="cr34" 
+                (click)="calScore(cr34)"
+                >
 								<label class="custom-control-label" for="cr3-4">China</label>
 							</div>
 						</div>
@@ -85,19 +127,35 @@
 						</div>
 						<div class="ans">
 							<div class="custom-control custom-radio">
-								<input type="radio" id="cr4-1" name="customRadio" class="custom-control-input">
+								<input type="radio" id="cr4-1" name="customRadio" class="custom-control-input"
+                class="custom-control-input"
+                #cr41 [ngModel]="cr41" 
+                (click)="calScore(cr41)"
+                >
 								<label class="custom-control-label" for="cr4-1">Atlanta</label>
 							</div>
 							<div class="custom-control custom-radio">
-								<input type="radio" id="cr4-2" name="customRadio" class="custom-control-input">
+								<input type="radio" id="cr4-2" name="customRadio" class="custom-control-input"
+                class="custom-control-input"
+                #cr42 [ngModel]="cr42" 
+                (click)="calScore(cr42)"
+                >
 								<label class="custom-control-label" for="cr4-2">Sydney</label>
 							</div>
 							<div class="custom-control custom-radio">
-								<input type="radio" id="cr4-3" name="customRadio" class="custom-control-input">
+								<input type="radio" id="cr4-3" name="customRadio" class="custom-control-input"
+                class="custom-control-input"
+                #cr43 [ngModel]="cr43" 
+                (click)="calScore(cr43)"
+                >
 								<label class="custom-control-label" for="cr4-3">Athens</label>
 							</div>
 							<div class="custom-control custom-radio">
-								<input type="radio" id="cr4-4" name="customRadio" class="custom-control-input">
+								<input type="radio" id="cr4-4" name="customRadio" class="custom-control-input"
+                class="custom-control-input"
+                #cr44 [ngModel]="cr44" 
+                (click)="calScore(cr44)"
+                >
 								<label class="custom-control-label" for="cr4-4">Beijing</label>
 							</div>
 						</div>
@@ -108,19 +166,35 @@
 						</div>
 						<div class="ans">
 							<div class="custom-control custom-radio">
-								<input type="radio" id="cr5-1" name="customRadio" class="custom-control-input">
+								<input type="radio" id="cr5-1" name="customRadio" class="custom-control-input"
+                class="custom-control-input"
+                #cr51 [ngModel]="cr51" 
+                (click)="calScore(cr51)"
+                >
 								<label class="custom-control-label" for="cr5-1">Albert Einstein</label>
 							</div>
 							<div class="custom-control custom-radio">
-								<input type="radio" id="cr5-2" name="customRadio" class="custom-control-input">
+								<input type="radio" id="cr5-2" name="customRadio" class="custom-control-input"
+                class="custom-control-input"
+                #cr52 [ngModel]="cr52" 
+                (click)="calScore(cr52)"
+                >
 								<label class="custom-control-label" for="cr5-2">Alexander Graham Bell</label>
 							</div>
 							<div class="custom-control custom-radio">
-								<input type="radio" id="cr5-3" name="customRadio" class="custom-control-input">
+								<input type="radio" id="cr5-3" name="customRadio" class="custom-control-input"
+                class="custom-control-input"
+                #cr53 [ngModel]="cr53" 
+                (click)="calScore(cr53)"
+                >
 								<label class="custom-control-label" for="cr5-3">Isaac Newton</label>
 							</div>
 							<div class="custom-control custom-radio">
-								<input type="radio" id="cr5-4" name="customRadio" class="custom-control-input">
+								<input type="radio" id="cr5-4" name="customRadio" class="custom-control-input"
+                class="custom-control-input"
+                #cr54 [ngModel]="cr54" 
+                (click)="calScore(cr54)"
+                >
 								<label class="custom-control-label" for="cr5-4">Marie Curie</label>
 							</div>
 						</div>
