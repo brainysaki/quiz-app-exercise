@@ -19,7 +19,6 @@ export class QuizComponent implements OnInit {
   onBack(){
     this.step--;
     this.barWidth = this.barWidth- 20;
-    console.log('Submitted');
   }
   onNext(){
 
